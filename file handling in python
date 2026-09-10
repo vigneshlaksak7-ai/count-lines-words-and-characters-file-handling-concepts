@@ -1,0 +1,16 @@
+file = open("sample.txt", "w")
+file.write("Python is easy\n")
+file.write("Python is powerful")
+file.close()
+
+file = open("sample.txt", "r")
+data = file.read()
+file.close()
+
+lines = data.split("\n")
+words = data.split()
+characters = len(data)
+
+print("Number of Lines:", len(lines))
+print("Number of Words:", len(words))
+print("Number of Characters:", characters)
